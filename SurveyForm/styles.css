@@ -1,0 +1,108 @@
+
+.body {
+    background-color: lightpink;
+    font-family: Verdana;
+    margin-top: 0;
+    margin-left: 0;
+}
+.body form {
+    width: 70%;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: lightyellow;
+    padding: 35px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+.body h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 4.5rem;
+}
+.body video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.text_input {
+    font-size: 1.1rem;
+    border:none
+}
+.text_input:hover {
+    font-size: 1.150rem;
+    border: black;
+}
+.button {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 30px;
+    padding: 12px
+}
+.adjustedButton {
+    background-color: lightpink;
+}
+.back {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+.footer {
+    text-align: center;
+}
+.content {
+    display: list-item;
+}
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darken background slightly */
+    backdrop-filter: blur(5px); /* Blur effect */
+    z-index: 999; /* Place above other content */
+}
+.output {
+    position: absolute;
+    width: 500px;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000; /* Place above the overlay */
+}
+.output h2 {
+    color: rgb(196, 196, 196);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.output label {
+    font-weight: bold;
+}
+.output span {
+    display:flex;
+    margin: 7px
+}
+.footer {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}

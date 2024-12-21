@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+    </head>
+
+    <body class="body">
+        <video autoplay loop muted playsinline src="video.mp4"></video>
+        <div class="content">
+            <div class="overlay">
+                <div class="output">
+                    <h2>Information</h2>
+                    <label for="">Name:</label>
+                    <span id="modalName"></span>
+                    <br />
+
+                    <label for="">Email:</label>
+                    <span id="modalEmail"></span>
+                    <br />
+
+                    <label for="">Age:</label>
+                    <span id="modalAge"></span>
+                    <br />
+
+                    <label for="">Gender:</label>
+                    <span id="modalGender"></span>
+                    <br />
+
+                    <label for="">Languages and Frameworks known:</label>
+                    <span id="modalLanguages"></span>
+                    <br />
+                    <br />
+
+                    <div class="back">
+                    <button type="button" onclick="window.location.href='index.html'" class="button adjustedButton">
+                        Back
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Survey Form</h1>
+            <form id="form" class="form" method="">
+                <div id="form-control">
+                    <label for="name">Name:</label>
+                    <input type="text"  id="name" name="name" required placeholder="Enter your name" class="text_input name"  />
+                </div>
+                <br />
+                <div id="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address" class="text_input email" />
+                </div>
+                <br />
+                <div id="form-control">
+                    <label for="age">Age:</label>
+                    <input type="date" id="age" name="age" required class="text_input" />
+                </div>
+                <br />
+                <div id="form-control">
+                    <label for="gender">What option best describes you?:</label>
+                    <select id="level" name="level" required class="text_input">
+                        <option value="basicOption">Select your option</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Student">Student</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Retired">Retired</option>
+                        <option value="Unknown">Prefer not to say</option>
+                    </select>
+                </div>
+                <br />
+                <div id="form-control">
+                    <label for="gender">Gender: </label> <br />
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label> <br />
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label> <br />
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label> <br />
+                </div>
+                <br />
+                <div id="form-control">
+                    <label for="languages">
+                    Languages and Frameworks known (Check all that apply)</label>
+                    <br />
+                    <input type="checkbox" id="C" name="C" value="C" />
+                    <label for="C">C</label> <br />
+
+                    <input type="checkbox" id="C++" name="C++" value="C++" />
+                    <label for="C++">C++</label> <br />
+
+                    <input type="checkbox" id="C#" name="C#" value="C#" />
+                    <label for="C#">C#</label> <br />
+
+                    <input type="checkbox" id="Java" name="Java" value="Java" />
+                    <label for="Java">Java</label> <br />
+
+                    <input type="checkbox" id="Python" name="Python" value="Python" />
+                    <label for="Python">Python</label> <br />
+
+                    <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript"/>
+                    <label for="JavaScript">JavaScript</label> <br />
+
+                    <input type="checkbox" id="React" name="React" value="React" />
+                    <label for="React">React</label> <br />
+
+                    <input type="checkbox" id="Angular" name="Angular" value="Angular" />
+                    <label for="Angular">Angular</label> <br />
+
+                    <input type="checkbox" id="Django" name="Django" value="Django" />
+                    <label for="Django">Django</label> <br />
+
+                    <input type="checkbox" id="Spring" name="Spring" value="Spring" />
+                    <label for="C">Spring</label> <br />
+                </div>
+                <br />
+
+                <div id="form-control">
+                    <label for="">Any comments or suggestions:</label> <br />
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any additional comments" class="text_input"></textarea>
+                </div>
+                <br />
+
+                <div class="footer">
+                    <button id="submit" type="submit" class="button" onclick="show(event)">
+                        Submit
+                    </button>
+                    <button id="reset" type="reset" class="button" onclick="">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+    <footer class="footer">
+        <small>
+            Developed by @<a href="https://github.com/" target="_blank">
+            Anh Le Hoang</a>.
+        </small>
+    </footer>
+</html>
